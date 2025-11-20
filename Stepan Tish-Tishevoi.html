@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Степан Тишь-Тишевой</title>
+    
+    <style>
+        /* Стили для плавного изменения цвета фона */
+        body {
+            transition: background-color 1s ease-in-out; 
+        }
+
+        /* Стили для белого экрана (оверлея) */
+        #flashOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            opacity: 0; /* Изначально прозрачный (скрыт) */
+            visibility: hidden; /* Скрыт от взаимодействия */
+            transition: opacity 0.5s ease-in-out; /* Плавное появление/исчезновение */
+            z-index: 9999; /* Поверх всех элементов */
+        }
+    </style>
 </head>
 <body>
     <h1>Страница посвященная Степанингу</h1>
-    <img src="Stepan Tish-Tishevoi.jpg"  alt="Фото Степана">
-    
+    <img src="Stepan Tish-Tishevoi.jpg" id="mainImage" alt="Фото Степана">
+
+    <div id="flashOverlay"></div>
+
+    <audio id="backgroundMusic" src="scary.mp3" loop></audio>
+    <script src="easteregg.js"></script>
 </body>
 </html>
