@@ -1,0 +1,51 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #171252;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+
+.resized {
+  width: 2000px;       
+  height: 100px;        
+}
+
+.button-style {
+  display: inline-block;
+  padding: 12px 28px;
+  position: static;
+  font-size: 18px;
+  font-weight: 10;
+  text-decoration: none; 
+  color: #ffffff;
+  background-color: #001224;
+  border: 2px solid #030f1b;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+.button-style:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  box-shadow: 0 6px 8px rgba(255, 0, 0, 0.15);
+  color: black;
+
+}
+
+
+
+.button-container {
+  text-align: center; 
+  margin: 20px 0; 
+}
