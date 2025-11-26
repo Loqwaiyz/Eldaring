@@ -6,13 +6,18 @@ body {
 }
 
 h1 {
+  text-align: center; 
   color: #ffffff;
 }
 
+.image-gallery {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
 
 .resized {
-  width: 2000px;       
-  height: 100px;        
+  width: 1080px;       
+  height: auto;        
 }
 
 .button-style {
@@ -38,7 +43,6 @@ h1 {
 .button-style:hover {
   background-color: #ff0000;
   border-color: #ff0000;
-  box-shadow: 0 6px 8px rgba(255, 0, 0, 0.15);
   color: black;
 
 }

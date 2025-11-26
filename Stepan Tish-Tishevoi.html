@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Степан Тишь-Тишевой</title>
-    
+    <link rel="stylesheet" href="styles.css">
     <style>
+        h1 {
+            text-align: center; 
+            color: #ffffff;
+        }
         /* Стили для плавного изменения цвета фона */
         body {
             transition: background-color 1s ease-in-out; 
@@ -24,15 +28,30 @@
             transition: opacity 0.5s ease-in-out; /* Плавное появление/исчезновение */
             z-index: 9999; /* Поверх всех элементов */
         }
+
+        .button-style:hover {
+            background-color: #00264d;
+            border-color: #030f1b;
+            color: black;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>Страница посвященная Степанингу</h1>
     <img src="Stepan Tish-Tishevoi.jpg" id="mainImage" alt="Фото Степана">
+    <img src="Ya-v-libe-pryachus.jpg" alt="Я в либе прячусь">
 
     <div id="flashOverlay"></div>
 
     <audio id="backgroundMusic" src="scary.mp3" loop></audio>
     <script src="easteregg.js"></script>
+
+    <div class="button-container"> 
+        <a href="index.html" role="button" class="button-style">
+        Перейти в Эльдаринг
+        </a>
+    </div>
 </body>
 </html>
